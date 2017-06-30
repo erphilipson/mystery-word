@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mystery Word</title>
+  </head>
+  <body>
+    <form action='/' method='post'>
+      <input  type='text' name='guess' placeholder='Guess a letter...'>
+      <button type='submit'>Submit Guess</button>
+    </form>
+    <!-- {{wordGuess}} -->
+    <p>
+      {{#guessed}}
+        <span>{{item}}</span>
+      {{/guessed}}
+    </p>
+    {{wordGuess}}
+    <br>
+    {{error}}
+    <br>
+    {{triesMsg}}
+    <br>
+    Letters guessed: {{guessedDisplay}} 
+
+
+  </body>
+</html>
